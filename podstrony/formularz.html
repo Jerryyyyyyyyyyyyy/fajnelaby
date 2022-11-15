@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Formularz_css.css" type="text/css" />
+    <title>Pierwsza Podstrona</title>
+</head>
+
+<body>
+    <nav>
+
+        <h4><a href=".\index.html" style="text-decoration: none">Wyjdź z zakupów</a></h4>
+    </nav>
+    <div class="stronaZamowienia">
+    <form class="form" name="form" method="post">
+    <fieldset>
+    <legend>
+    <h2>FORMULARZ ZAMÓWIENIA</h2>
+    </legend>
+    <h3 class="panel-title">Podaj dane do wysyłki</h3>
+    Imię<br><input type="text" placeholder="Proszę uzupełnić pole" name="imie" maxlength="40" required=""><br>
+    Nazwisko<br><input type="text" placeholder="Proszę uzupełnić pole" name="nazwisko" maxlength="40"><br>
+    Telefon <br><input type="text" placeholder="Proszę uzupełnić pole" name="telefon" maxlength="25"><br><br>
+    <label for="faktura">Wystawić fakturę?</label>
+    <input type="checkbox" name="faktura" value="faktura"><br>
+    <h3 class="panel-title">Wybierz sposób dostawy</h3>
+    <input type="radio" name="dostawa" id="dostawa1" value="dostawa1"><label for="dostawa1">Paczkomat</label
+    for="dostawa1"><br>
+    <input type="radio" name="dostawa" id="dostawa2" value="dostawa2"><label
+    for="dostawa2">Kurier</label><br>
+    <h3 class="panel-title">Wybierz metodę płatności</h3>
+    <div id="paymentMethod">
+    <div class="radio">
+    <label>
+    <input type="radio" name="sposob_platnosci">
+        <div>
+                <span
+                    data-toggle="tooltip" data-placement="top">
+                    <img src="file:///C:/Users/studentwftims.LAB/Desktop//NIE%20USUWA%C4%86%20GROZI%20PORA%C5%BBENIEM/images/przelew.jpg">
+                    <figcaption>Przelew Bankowy</figcaption>
+                <br>
+                </span>
+        </div>
+                </label>
+                </div>
+                <div class="radio mg-bottom-0">
+                <label>
+                        <input type="radio" name="sposob_platnosci">
+                            <div>
+                                <span
+                                    data-toggle="tooltip" data-placement="top">
+                                    <img src="file:///C:/Users/studentwftims.LAB/Desktop//NIE%20USUWA%C4%86%20GROZI%20PORA%C5%BBENIEM/images/karta.png">
+                                    <figcaption>Płatność kartą</figcaption>
+                                </span>
+                            </div>
+                </label>
+                </div>
+        </div>
+        <h3 class="panel-title">Uwagi do zamówienia</h3>
+        <textarea name="tresc" placeholder="Uwagi do zamówienia" rows="5" cols="40"></textarea><br>
+        <input type="submit" name="submit" value="wyślij">
+        </fieldset>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
